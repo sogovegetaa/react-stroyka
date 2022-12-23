@@ -1,0 +1,30 @@
+[
+  {   
+      "id": 1,
+      "img": "/product-7.jpg",
+      "title": "Brandix Pliers",
+      "price": "$24.00",
+      "reviews": "4"
+  },
+  {   
+      "id": 2,
+      "img": "/product-10.jpg",
+      "title": "Water Tap",
+      "price": "$15.00",
+      "reviews": "11"
+  },
+  {   
+      "id": 3,
+      "img": "/product-12.jpg",
+      "title": "Ash`s Chainsaw 3.5KW",
+      "price": "$666.99",
+      "reviews": "1"
+  },
+  {   
+      "id": 4,
+      "img": "/product-13.jpg",
+      "title": "Brandix Angle Grinder KZKX3890PQW",
+      "price": "$649.00",
+      "reviews": "4"
+  }
+]
