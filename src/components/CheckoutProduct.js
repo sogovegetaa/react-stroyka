@@ -14,7 +14,7 @@ function CheckoutProduct({ id, img, title, price, rating }) {
   }
 
   return (
-    <div className='checkoutProduct'>
+    <div className='checkoutProduct border border-gray-200 rounded-lg'>
       <img src={img} alt='image product' className='checkoutProduct__image' />
       <div className='checkoutProduct__info'>
         <p className='checkoutProduct__title'>{title}</p>
@@ -28,7 +28,7 @@ function CheckoutProduct({ id, img, title, price, rating }) {
             ))
           }
         </div>
-        <button onClick={removeFromBasket}>Remove from basket</button>
+        <button className='px-5' onClick={removeFromBasket}>Удалить с корзины</button>
       </div>
       
     </div>

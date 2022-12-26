@@ -6,10 +6,11 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "../firebase";
+import { useState } from "react";
 
-function Header() {
+function Closeheader() {
   const [{ basket, user }, dispatch] = useStateValue();
-
+  const [menu, setMenu] = useState(false)
   const handleAuthentication = () => {
     if (user) {
       auth.signOut();
@@ -29,13 +30,13 @@ function Header() {
     { name: "Welding & Soldering", link: "/" },
   ];
   const nav = [
-    { name: "Главная", link: "/" },
-    { name: "Каталог", link: "/" },
-    { name: "Магазин", link: "/" },
-    { name: "Блог", link: "/" },
-    { name: "Старницы", link: "/" },
-    { name: "Контакты", link: "/" },
-    { name: "О нас", link: "/" },
+    { name: "Home", link: "/" },
+    { name: "Megamenu", link: "/" },
+    { name: "Shop", link: "/" },
+    { name: "Blog", link: "/" },
+    { name: "Pages", link: "/" },
+    { name: "Contact Us", link: "/" },
+    { name: "About me", link: "/" },
   ];
   return (
     <>
@@ -59,7 +60,7 @@ function Header() {
             <div className="flex items-center relative h-full">
               <div className="shrink-0">
                 <div className="w-[255px] h-[42px] text-white relative">
-                  <div className="h-[458px] w-full pt-[42px] absolute bg-[#3d464d] rounded-[2px]">
+                {menu && <div className="h-[458px] w-full pt-[42px] absolute bg-[#3d464d] rounded-[2px]">
                     <div className="overflow-visible h-auto opacity-100">
                       <ul className="relative list-none p-[0 0 14px] m-[6px 0 0]">
                         {list.map((item) => (
@@ -75,8 +76,8 @@ function Header() {
                         ))}
                       </ul>
                     </div>
-                  </div>
-                  <button className="text-left border-0 bg-transparent text-inherit text-[15px] relative z-[1] w-full h-full cursor-default font-medium pr-[32px] pl-[47px]">
+                  </div>}
+                  <button onClick={()=>setMenu(!menu)} className="bg-[#3d464d] text-left border-0  text-inherit text-[15px] relative z-[1] w-full h-full cursor-default font-medium pr-[32px] pl-[47px]">
                     Shop by Category
                   </button>
                 </div>
@@ -91,7 +92,7 @@ function Header() {
                       <Link
                         style={{ textDecoration: "none" }}
                         to={`${item.link}`}
-                        className="text-inherit "
+                        className="text-inherit"
                       >
                         {item.name}
                       </Link>
@@ -106,10 +107,10 @@ function Header() {
                     className="header__option"
                   >
                     <span className="header__optionOne">
-                      Привет {user ? user.email : "Guest"}
+                      Hello {user ? user.email : "Guest"}
                     </span>
                     <span className="header__optionTwo">
-                      {user ? "Выйти" : "Войти"}
+                      {user ? "Sign Out" : "Sign In"}
                     </span>
                   </div>
                 </Link>
@@ -137,30 +138,9 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className='grow'>
-        <div className="mb-[70px] relative">
-            <div className="container mx-auto">
-                <div className="grid grid-cols-12 ">
-                    <div className="col-span-3"></div>
-                    <div className="col-span-9">
-                        <div className='ml-[-15px] mt-4 w-[840px]'>
-                            <div className="h-[395px] bg-[url('../public/slide-3.jpg')] relative">
-                                <div className="absolute left-[46px] bottom-[46px]">
-                                    <div className="leading-[34px] text-[30px] font-bold mb-3" dangerouslySetInnerHTML={{__html: 'One more <br> Unique Header'}} />
-                                    <div className='opacity-[1] leading-[1.625] font-medium' dangerouslySetInnerHTML={{__html: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Etiam pharetra laoreet dui quis molestie.'}}/>
-                                    <div className="mt-[40px]">
-                                        <span className='cursor-pointer bg-[#ffd333] text-[#3d646d] text-[1.125rem] py-[0.8125rem] px-8 font-medium hover:bg-[#3d464d] hover:text-white duration-300'>Shop now</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     </>
   );
 }
 
-export default Header;
+export default Closeheader;

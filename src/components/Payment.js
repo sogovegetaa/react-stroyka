@@ -71,8 +71,8 @@ function Payment() {
           </div>
           <div className="payment__address">
             <p>{user ? user.email : 'Guest'}</p>
-            <p>Shangwe Street, House No. 295</p>
-            <p>Dar es salaam, Tanzania</p>
+            <p>Акмолинская область, г.Астана</p>
+            <p>ул. Тауелсиздик 52</p>
           </div>
         </div>
 

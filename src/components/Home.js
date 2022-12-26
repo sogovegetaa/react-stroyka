@@ -44,24 +44,28 @@ function Home() {
               title="Brandix Pliers"
               img="/product-7.jpg"
               price={24.00}
+              link="/brandix"
             />
             <Product
               id="2354578"
               title="Water Tap"
               img="/product-10.jpg"
               price={15.00}
+              link="/watertap"
             />
             <Product
               id="234689578"
               title="Ash`s Chainsaw 3.5KW"
               img="/product-12.jpg"
               price={666.99}
+              link="/chainsaw"
             />
             <Product
               id="2312578"
               title="Brandix Angle Grinder KZKX3890PQW"
               img="/product-13.jpg"
               price={649.00}
+              link="/angle"
             />
           </div>
         </div>
