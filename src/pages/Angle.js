@@ -33,7 +33,7 @@ function Angle() {
             <img src="/product-13.jpg" alt="" />
           </div>
           <div className="ml-5">
-            <h1 className="text-4xl font-bold mb-8">Brandix Angle Grinder KZKX3890PQW</h1>
+            <h1 className="text-4xl font-bold mb-8">Угловая шлифовальная машина Brandix KZKX3890PQW</h1>
             <div className="text-center text-[#999999] text-md py-5">
               7 Reviews
             </div>

@@ -3,66 +3,66 @@ import React from "react";
 
 const Popular = () => {
     const cat = [
-        {
-            "img": "/category-1.jpg",
-            "title": "Power Tools",
-            "list1": "Screwdrivers",
-            "list2": "Milling Cutters",
-            "list3": "Sanding Machines",
-            "list4": "Wrenches",
-            "list5": "Drills",
+      {
+        "img": "/category-1.jpg ",
+        "title": "Электроинструменты",
+        "list1": "Отвертки",
+        "list2": "Фрезы",
+        "list3": "Шлифовальные станки",
+        "list4": "Гаечные ключи",
+        "list5": "Сверла",
         },
         {
-            "img": "/category-2.jpg",
-            "title": "Hand Tools",
-            "list1": "Hammers",
-            "list2": "Spanners",
-            "list3": "Handsaws",
-            "list4": "Paint Tools",
-            "list5": "Screwdrivers",
+        "img": "/category-2.jpg ",
+        "title": "Ручные инструменты",
+        "list1": "Молотки",
+        "list2": "Гаечные ключи",
+        "list3": "Ручные пилы",
+        "list4": "Малярные инструменты",
+        "list5": "Отвертки",
         },
         {
-            "img": "/category-3.jpg",
-            "title": "Power Machinery",
-            "list1": "Generators",
-            "list2": "Compressors",
-            "list3": "Winches",
-            "list4": "Plasma Cutting",
-            "list5": "Electric Motors",
+        "img": "/category-3.jpg ",
+        "title": "Энергетическое оборудование",
+        "list1": "Генераторы",
+        "list2": "Компрессоры",
+        "list3": "Лебедки",
+        "list4": "Плазменная резка",
+        "list5": "Электродвигатели",
         },
         {
-            "img": "/category-4.jpg",
-            "title": "PMachine Tools",
-            "list1": "Lathes",
-            "list2": "Milling Machines",
-            "list3": "Grinding Machines",
-            "list4": "CNC Machines",
-            "list5": "Sharpening Machines",
+        "img": "/category-4.jpg ",
+        "title": "PСтанки",
+        "list1": "Токарные станки",
+        "list2": "Фрезерные станки",
+        "list3": "Шлифовальные станки",
+        "list4": "Станки с ЧПУ",
+        "list5": "Заточные станки",
         },
         {
-            "img": "/category-5.jpg",
-            "title": "Measurement",
-            "list1": "Tape Measure",
-            "list2": "Theodolites",
-            "list3": "Thermal Imagers",
-            "list4": "Calipers",
-            "list5": "Levels",
+        "img": "/category-5.jpg ",
+        "title": "Измерение",
+        "list1": "Рулетка",
+        "list2": "Теодолиты",
+        "list3": "Тепловизоры",
+        "list4": "Штангенциркули",
+        "list5": "Уровни",
         },
         {
-            "img": "/category-6.jpg",
-            "title": "Clothes and PPE",
-            "list1": "Winter Workwear",
-            "list2": "Summer Workwear",
-            "list3": "Helmets",
-            "list4": "Belts and Bags",
-            "list5": "Work Shoes",
+        "img": "/category-6.jpg ",
+        "title": "Одежда и СИЗ",
+        "list1": "Зимняя спецодежда",
+        "list2": "Летняя спецодежда",
+        "list3": "Шлемы",
+        "list4": "Ремни и сумки",
+        "list5": "Рабочая обувь",
         },
     ]
   return (
     <div className="pt-[50px] pb-[60px] bg-[#f9f9f9]">
       <div className="container mx-auto">
         <div className="flex items-center mb-[24px]">
-          <h3 className="text-[20px] text-[#3d464d]">Popular Categories</h3>
+          <h3 className="text-[20px] text-[#3d464d]">Популярные Категорий</h3>
           <div className="grow h-[2px] bg-[#ebebeb] ml-[16px]"></div>
         </div>
         <div className="grid grid-cols-3 gap-4">
@@ -82,7 +82,7 @@ const Popular = () => {
                 <li className="text-[#6c757d] text-[14px]">{item.list4}</li>
                 <li className="text-[#6c757d] text-[14px]">{item.list5}</li>
               </ul>
-              <div className="pt-2 text-blue-400">Show all</div>
+              <div className="pt-2 text-blue-400">Показать все</div>
             </div>
           </div>
           ))}

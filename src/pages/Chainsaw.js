@@ -10,7 +10,7 @@ function Chainsaw() {
       type: "ADD_TO_BASKET",
       item: {
         id: "2",
-        title: "Ash`s Chainsaw 3.5KW",
+        title: "Бензопила Эша 3,5 кВт",
         price: "666",
         img: "/product-12.jpg",
       },
@@ -33,7 +33,7 @@ function Chainsaw() {
             <img src="/product-12.jpg" alt="" />
           </div>
           <div className="ml-5">
-            <h1 className="text-4xl font-bold mb-8">Ash`s Chainsaw 3.5KW</h1>
+            <h1 className="text-4xl font-bold mb-8">Бензопила Эша 3,5 кВт</h1>
             <div className="text-center text-[#999999] text-md py-5">
               7 Reviews
             </div>

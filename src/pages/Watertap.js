@@ -10,7 +10,7 @@ function Watertap() {
       type: "ADD_TO_BASKET",
       item: {
         id: "2",
-        title: "Water Tap",
+        title: "Водопроводный кран",
         price: "15",
         img: "/product-10.jpg",
       },
@@ -33,7 +33,7 @@ function Watertap() {
             <img src="/product-10.jpg" alt="" />
           </div>
           <div className="ml-5">
-            <h1 className="text-4xl font-bold mb-8">Water Tap</h1>
+            <h1 className="text-4xl font-bold mb-8">Водопроводный кран</h1>
             <div className="text-center text-[#999999] text-md py-5">
               7 Reviews
             </div>

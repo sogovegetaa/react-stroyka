@@ -16,17 +16,17 @@ function Header() {
     }
   };
   const list = [
-    { name: "Power Tools", link: "/" },
-    { name: "Hand Tools", link: "/" },
-    { name: "Machine Tools", link: "/" },
-    { name: "Building Tools", link: "/" },
-    { name: "Electrical", link: "/" },
-    { name: "Power Machinery", link: "/" },
+    { name: "Электроинструменты", link: "/" },
+    { name: "Ручные инструменты", link: "/" },
+    { name: "Станки", link: "/" },
+    { name: "Строительные инструменты", link: "/" },
+    { name: "Электрический", link: "/" },
+    { name: "Энергетическое оборудование", link: "/" },
     { name: "Measurement", link: "/" },
-    { name: "Clothes % PPE", link: "/" },
-    { name: "Plumbing", link: "/" },
-    { name: "Storage & Organization", link: "/" },
-    { name: "Welding & Soldering", link: "/" },
+    { name: "Одежда % СИЗ", link: "/" },
+    { name: "Водопровод", link: "/" },
+    { name: "Хранение и организация", link: "/" },
+    { name: "Сварка и пайка", link: "/" },
   ];
   const nav = [
     { name: "Главная", link: "/" },
@@ -47,7 +47,7 @@ function Header() {
         </div>
         <div className="align-right ml-80">
           <div className="text-[14px] text-[#999] mb-[6px]">
-            Customer Service
+            Обслуживание клиентов
           </div>
           <div className="text-[20px] font-bold">8 771 060-0790</div>
         </div>
@@ -77,7 +77,7 @@ function Header() {
                     </div>
                   </div>
                   <button className="text-left border-0 bg-transparent text-inherit text-[15px] relative z-[1] w-full h-full cursor-default font-medium pr-[32px] pl-[47px]">
-                    Shop by Category
+                    Категорий
                   </button>
                 </div>
               </div>
@@ -115,13 +115,13 @@ function Header() {
                 </Link>
 
                 <div className="header__option">
-                  <span className="header__optionOne">Return</span>
-                  <span className="header__optionTwo">& Orders</span>
+                  <span className="header__optionOne">Возврат </span>
+                  <span className="header__optionTwo">& Заказы</span>
                 </div>
 
                 <div className="header__option">
-                  <span className="header__optionOne">Your</span>
-                  <span className="header__optionTwo">Prime</span>
+                  <span className="header__optionOne">Ваши</span>
+                  <span className="header__optionTwo">Заказы</span>
                 </div>
 
                 <Link to="/checkout">
@@ -149,7 +149,7 @@ function Header() {
                                     <div className="leading-[34px] text-[30px] font-bold mb-3" dangerouslySetInnerHTML={{__html: 'One more <br> Unique Header'}} />
                                     <div className='opacity-[1] leading-[1.625] font-medium' dangerouslySetInnerHTML={{__html: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Etiam pharetra laoreet dui quis molestie.'}}/>
                                     <div className="mt-[40px]">
-                                        <span className='cursor-pointer bg-[#ffd333] text-[#3d646d] text-[1.125rem] py-[0.8125rem] px-8 font-medium hover:bg-[#3d464d] hover:text-white duration-300'>Shop now</span>
+                                        <span className='cursor-pointer bg-[#ffd333] text-[#3d646d] text-[1.125rem] py-[0.8125rem] px-8 font-medium hover:bg-[#3d464d] hover:text-white duration-300'>Купить</span>
                                     </div>
                                 </div>
                             </div>

@@ -62,12 +62,12 @@ function Payment() {
     <div className="payment">
       <div className="payment__container">
         <h1>
-          Checkout (<Link to='/checkout'>{basket?.length} items</Link>)
+        Элементы  (<Link to='/checkout'>{basket?.length} оформления заказа</Link>)
         </h1>
 
         <div className="payment__section">
           <div className="payment__title">
-            <h3>Delivery Address</h3>
+            <h3>Адрес доставки</h3>
           </div>
           <div className="payment__address">
             <p>{user ? user.email : 'Guest'}</p>
@@ -78,7 +78,7 @@ function Payment() {
 
         <div className="payment__section">
           <div className="payment__title">
-            <h3>Review Items and Delivery</h3>
+            <h3>Просмотрите товары и доставку</h3>
           </div>
           <div className="payment__items">
             {basket.map(item => (
@@ -96,7 +96,7 @@ function Payment() {
 
         <div className="payment__section">
           <div className="payment__title">
-            <h3>Payment Method</h3>
+            <h3>Метод платежа</h3>
           </div>
           <div className="payment__details">
             <form onSubmit={handleSubmit}>
@@ -119,7 +119,7 @@ function Payment() {
                 />
 
                 <button disabled={ processing || disabled || succeeded }>
-                  <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
+                  <span>{processing ? <p>Загрузка</p> : "Купить сейчас"}</span>
                 </button>
               </div>
               

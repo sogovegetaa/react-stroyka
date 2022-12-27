@@ -14,11 +14,11 @@ function Subtotal() {
         renderText={(value) => (
           <>
             <p>
-              Subtotal ({basket.length} items): <strong>{value}</strong>
+            Промежуточный итог ({basket.length} items): <strong>{value}</strong>
             </p>
 
             <small className="subtotal__gift">
-              <input type="checkbox" /> This order contains a gift
+              <input type="checkbox" /> Этот заказ содержит подарок
             </small>
             
           </>
@@ -29,7 +29,7 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"$"}
       />
-      <button onClick={e => history.push('/payment')}>Proceed to checkout </button>
+      <button onClick={e => history.push('/payment')}>Перех к оформлению заказа </button>
     </div>
   )
 }

@@ -17,26 +17,26 @@ function Closeheader() {
     }
   };
   const list = [
-    { name: "Power Tools", link: "/" },
-    { name: "Hand Tools", link: "/" },
-    { name: "Machine Tools", link: "/" },
-    { name: "Building Tools", link: "/" },
-    { name: "Electrical", link: "/" },
-    { name: "Power Machinery", link: "/" },
+    { name: "Электроинструменты", link: "/" },
+    { name: "Ручные инструменты", link: "/" },
+    { name: "Станки", link: "/" },
+    { name: "Строительные инструменты", link: "/" },
+    { name: "Электрический", link: "/" },
+    { name: "Энергетическое оборудование", link: "/" },
     { name: "Measurement", link: "/" },
-    { name: "Clothes % PPE", link: "/" },
-    { name: "Plumbing", link: "/" },
-    { name: "Storage & Organization", link: "/" },
-    { name: "Welding & Soldering", link: "/" },
+    { name: "Одежда % СИЗ", link: "/" },
+    { name: "Водопровод", link: "/" },
+    { name: "Хранение и организация", link: "/" },
+    { name: "Сварка и пайка", link: "/" },
   ];
   const nav = [
-    { name: "Home", link: "/" },
-    { name: "Megamenu", link: "/" },
-    { name: "Shop", link: "/" },
-    { name: "Blog", link: "/" },
-    { name: "Pages", link: "/" },
-    { name: "Contact Us", link: "/" },
-    { name: "About me", link: "/" },
+    { name: "Главная", link: "/" },
+    { name: "Каталог", link: "/" },
+    { name: "Магазин", link: "/" },
+    { name: "Блог", link: "/" },
+    { name: "Страницы", link: "/" },
+    { name: "Контакты", link: "/" },
+    { name: "О нас", link: "/" },
   ];
   return (
     <>
@@ -48,7 +48,7 @@ function Closeheader() {
         </div>
         <div className="align-right ml-80">
           <div className="text-[14px] text-[#999] mb-[6px]">
-            Customer Service
+          Обслуживание клиентов
           </div>
           <div className="text-[20px] font-bold">8 771 060-0790</div>
         </div>
@@ -78,7 +78,7 @@ function Closeheader() {
                     </div>
                   </div>}
                   <button onClick={()=>setMenu(!menu)} className="bg-[#3d464d] text-left border-0  text-inherit text-[15px] relative z-[1] w-full h-full cursor-default font-medium pr-[32px] pl-[47px]">
-                    Shop by Category
+                    Категорий
                   </button>
                 </div>
               </div>
@@ -116,13 +116,13 @@ function Closeheader() {
                 </Link>
 
                 <div className="header__option">
-                  <span className="header__optionOne">Return</span>
-                  <span className="header__optionTwo">& Orders</span>
+                  <span className="header__optionOne">Возврат </span>
+                  <span className="header__optionTwo">& Заказы</span>
                 </div>
 
                 <div className="header__option">
-                  <span className="header__optionOne">Your</span>
-                  <span className="header__optionTwo">Prime</span>
+                  <span className="header__optionOne">Ваши</span>
+                  <span className="header__optionTwo">Заказы</span>
                 </div>
 
                 <Link to="/checkout">
